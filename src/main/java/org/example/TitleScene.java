@@ -20,22 +20,16 @@ public class TitleScene extends Scene {
 
     }
 
-    @Override
-    public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-            System.out.println("Entering game scene");
-            SceneManager.getSceneManager().setActiveScene(new GameScene());
-        }
-    }
-
     public void draw(Graphics g) {
         System.out.println("drawing title screen");
         Graphics2D g2 = (Graphics2D) g;
         g2.drawImage(TitleScreen, 0, 0, null);
     }
 
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        SceneManager.getSceneManager().draw(g);
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+            SceneManager.getSceneManager().setActiveScene(new GameScene());
+        }
     }
 }

@@ -23,6 +23,12 @@ public class SceneManager implements KeyListener {
         this.activeScene = activeScene;
     }
 
+    public void update(double dt) {
+        activeScene.update(dt);
+    }
+
+
+
     public void keyPressed(KeyEvent e) {
         activeScene.keyPressed(e);
     }

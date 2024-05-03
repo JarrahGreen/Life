@@ -11,8 +11,8 @@ public class Main {
         window.setTitle("Life");
         window.addKeyListener(SceneManager.getSceneManager());
 
-        TitleScene titleScene = new TitleScene();
-        window.add(titleScene);
+        GamePanel gamePanel = new GamePanel();
+        window.add(gamePanel);
         window.pack();
         window.setLocationRelativeTo(null);
         window.setVisible(true);
