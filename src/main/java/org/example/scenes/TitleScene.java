@@ -1,4 +1,4 @@
-package org.example;
+package org.example.scenes;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -16,12 +16,10 @@ public class TitleScene extends Scene {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        this.setPreferredSize(new Dimension(1920, 1080));
 
     }
 
     public void draw(Graphics g) {
-        System.out.println("drawing title screen");
         Graphics2D g2 = (Graphics2D) g;
         g2.drawImage(TitleScreen, 0, 0, null);
     }

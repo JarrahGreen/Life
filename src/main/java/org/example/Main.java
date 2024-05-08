@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.scenes.SceneManager;
+
 import javax.swing.*;
 
 public class Main {
@@ -16,5 +18,7 @@ public class Main {
         window.pack();
         window.setLocationRelativeTo(null);
         window.setVisible(true);
+
+        gamePanel.run();
     }
 }

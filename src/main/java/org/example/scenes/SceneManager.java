@@ -1,4 +1,4 @@
-package org.example;
+package org.example.scenes;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
